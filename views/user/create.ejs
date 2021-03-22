@@ -1,0 +1,58 @@
+<%- include ('../partials/header.ejs') %>
+<%- include ('../partials/navbar.ejs') %>
+
+<div class="container">
+
+    <div class="card mt-4"> 
+        <div class="card-header">
+            <h2> Criação de Usuário </h2>
+        </div>
+        <div class="card-body">
+                <form method="POST" action="/users/create">
+                    <label for="nome">Insira seu Nome Completo</label>
+                    <input class="form-control" name="nome"  type="text"><br>
+                    <label for="cpf">Insira seu CPF</label>
+                    <input class="form-control" name="cpf" type="text"><br>
+                    <label for="email">Insira seu Email</label>
+                    <input class="form-control" name="email" type="email" placeholder="email@exemplo.com"><br>
+                    <label for="email">Insira sua senha</label>
+                    <input class="form-control" name="password" type="password" placeholder="*****"><br>
+                    <label for="email">Insira seu Cep</label>
+       
+                        <input id="cep"  name="cep" type="text" />
+                        <button id="search_button">
+                            <img src="https://cdn1.iconfinder.com/data/icons/TWG_Retina_Icons/24/magnifier.png" width="20" style="border-left: 1px solid #D7D7D7; padding: 0 0 0 5px;" />
+                        </button>
+
+                        <br><br>
+
+                        <label for="rua">Rua</label>
+                        <input class="form-control" name="rua" id="rua" type="text"><br>
+
+                        <label for="bairro">Bairro</label>
+                    <input class="form-control" name="bairro"  id="bairro" type="text"><br>
+
+                    <label for="cidade">Cidade</label>
+                    <input class="form-control" name="cidade"  id="cidade" type="text"><br>
+
+                    <label for="estado">Estado</label>
+                    <input class="form-control" name="estado"  id="estado" type="text"><br>
+                        
+                    <label for="numero">Número</label>
+                    <input class="form-control" name="numero" id="numero" type="number"><br>
+
+                    <label for="complemento">Complemento</label>
+                    <input class="form-control" name="complemento" id="complemento" type="text"><br>
+                    
+
+                    <button type="submit" class="btn btn-primary btn-block">Criar</button>
+                    
+                </form>  
+        </div>
+    </div>
+
+</div>
+
+<script src=/scripts/jquery.js></script>
+<script src=/scripts/script.js></script>
+<%- include ('../partials/footer.ejs') %>
